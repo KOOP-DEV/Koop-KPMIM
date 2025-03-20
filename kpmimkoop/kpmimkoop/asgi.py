@@ -1,5 +1,5 @@
 """
-ASGI config for koop_kpmim project.
+ASGI config for kpmimkoop project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'koop_kpmim.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kpmimkoop.settings')
 
 application = get_asgi_application()

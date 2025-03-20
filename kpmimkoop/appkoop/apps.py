@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class KoopConfig(AppConfig):
+class AppkoopConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'koop'
+    name = 'appkoop'
