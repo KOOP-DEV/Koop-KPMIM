@@ -1,5 +1,5 @@
 """
-WSGI config for koop_kpmim project.
+WSGI config for kpmimkoop project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'koop_kpmim.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kpmimkoop.settings')
 
 application = get_wsgi_application()
