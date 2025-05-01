@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import *
-from .forms import BookingForm, KoopMartOrderForm
 import logging
 
 logger = logging.getLogger(__name__)
@@ -41,17 +40,6 @@ def cafe_air(request):
 def koop_mart(request):
     return render(request, 'services/koop_mart.html')
 
-def koop_mart_order(request):
-    if request.method == 'POST':
-        form = KoopMartOrderForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Tempahan telah berjaya dihantar!')
-            return redirect('koop_mart')
-    else:
-        form = KoopMartOrderForm()
-    
-    return render(request, 'services/koop_mart_order.html', {'form': form})
 
 def kios_aok(request):
     return render(request, 'services/kios_aok.html')
@@ -83,17 +71,3 @@ def edutrip_csr(request):
         'csr_packages': csr_packages
     })
 
-def booking(request):
-    return render(request, 'booking.html')
-
-def submit_booking(request):
-    if request.method == 'POST':
-        form = BookingForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Tempahan telah berjaya dihantar!')
-            return redirect('booking')
-    else:
-        form = BookingForm()
-    
-    return render(request, 'booking/form.html', {'form': form})

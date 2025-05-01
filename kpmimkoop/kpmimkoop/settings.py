@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'appkoop',
+    'django_browser_reload',
 ]
 
 MIDDLEWARE = [
