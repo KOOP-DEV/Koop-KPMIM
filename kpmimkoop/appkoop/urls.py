@@ -19,7 +19,6 @@ urlpatterns = [
     path('perkhidmatan/', views.services, name='services'),
     path('perkhidmatan/cafe-air/', views.cafe_air, name='cafe_air'),
     path('perkhidmatan/koop-mart/', views.koop_mart, name='koop_mart'),
-    path('perkhidmatan/koop-mart/tempahan/', views.koop_mart_order, name='koop_mart_order'),
     path('perkhidmatan/kios-aok-cafe/', views.kios_aok, name='kios_aok'),
     path('perkhidmatan/dobi/', views.dobi, name='dobi'),
     path('perkhidmatan/parcel/', views.parcel, name='parcel'),
@@ -31,7 +30,5 @@ urlpatterns = [
     path('pelancongan/siswa/', views.tourism_student, name='tourism_student'),
     path('pelancongan/edutrip-csr/', views.edutrip_csr, name='edutrip_csr'),
     
-    # Booking system
-    path('tempahan/', views.booking, name='booking'),
-    path('tempahan/hantar/', views.submit_booking, name='submit_booking'),
+
 ] 
