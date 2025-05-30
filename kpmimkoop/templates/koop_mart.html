@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Koop Mart - Koperasi KPMIM{% endblock %}
+
+{% block extra_css %}
+<style>
+.koop-mart-image {
+    width: 100%;
+    max-width: 1700px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+    width: 100%;
+    max-width: 1700px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1.5rem auto;
+    border-left: 4px solid var(--primary);
+}
+
+.info-box h3 {
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.working-hours {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark);
+}
+
+.working-hours .day {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.services-placeholder {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    border-radius: 6px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+@media (max-width: 1199.98px) {
+    .koop-mart-image {
+        height: 400px;
+    }
+    
+    .info-box {
+        margin: 1rem auto;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .koop-mart-image {
+        height: 350px;
+    }
+    
+    .info-box h3 {
+        font-size: 1.5rem;
+    }
+    
+    .working-hours {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .koop-mart-image {
+        height: 300px;
+    }
+    
+    .info-box {
+        padding: 1.25rem;
+        margin: 0.75rem auto;
+    }
+    
+    .info-box h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .koop-mart-image {
+        height: 250px;
+    }
+    
+    .info-box {
+        padding: 1rem;
+    }
+    
+    .working-hours {
+        font-size: 0.95rem;
+    }
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Main Content Section -->
+<section class="py-5">
+    <div class="container">
+        <!-- Koop Mart Image -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 text-center">
+                <img src="{% static 'img/koop-mart.jpg' %}" alt="Koop Mart" class="koop-mart-image">
+            </div>
+        </div>
+
+        <!-- Working Hours Box -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="info-box">
+                    <h3><i class="fas fa-clock me-2"></i>Working Hour</h3>
+                    <div class="working-hours">
+                        <div class="mb-2">
+                            <span class="day">Mon-Fri:</span> 8.00 am - 10.00 pm
+                        </div>
+                        <div>
+                            <span class="day">Sat:</span> 9.00 am - 6.00 pm
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Box -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="info-box">
+                    <h3><i class="fas fa-shopping-cart me-2"></i>Services</h3>
+                    <div class="services-placeholder">
+                        <!-- Placeholder for future service descriptions -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
