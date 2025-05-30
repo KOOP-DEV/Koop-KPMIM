@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Kios "Aok Cafe" - Koperasi KPMIM{% endblock %}
+{% block title %}Koop Mart - Koperasi KPMIM{% endblock %}
 
 {% block extra_css %}
 <style>
-.aok-cafe-image {
+.koop-mart-image {
     width: 100%;
     max-width: 1700px;
     height: 460px;
@@ -43,20 +43,19 @@
     color: var(--primary);
 }
 
-.services-placeholder {
+.services-content {
     min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 1.5rem;
     background-color: #f8f9fa;
-    border: 2px dashed #dee2e6;
     border-radius: 6px;
-    color: #6c757d;
-    font-style: italic;
+    color: #000000;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 @media (max-width: 1199.98px) {
-    .aok-cafe-image {
+    .koop-mart-image {
         height: 400px;
     }
     
@@ -67,7 +66,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .aok-cafe-image {
+    .koop-mart-image {
         height: 350px;
     }
     
@@ -81,7 +80,7 @@
 }
 
 @media (max-width: 767.98px) {
-    .aok-cafe-image {
+    .koop-mart-image {
         height: 300px;
     }
     
@@ -97,7 +96,7 @@
 }
 
 @media (max-width: 575.98px) {
-    .aok-cafe-image {
+    .koop-mart-image {
         height: 250px;
     }
     
@@ -113,13 +112,14 @@
 {% endblock %}
 
 {% block content %}
+
 <!-- Main Content Section -->
 <section class="py-5">
     <div class="container">
-        <!-- Aok Cafe Image -->
+        <!-- Koop Mart Image -->
         <div class="row justify-content-center mb-4">
             <div class="col-12 text-center">
-                <img src="{% static 'img/aok-cafe.jpg' %}" alt="Kios Aok Cafe" class="aok-cafe-image">
+                <img src="{% static 'img/koop-mart.jpg' %}" alt="Koop Mart" class="koop-mart-image">
             </div>
         </div>
 
@@ -130,7 +130,10 @@
                     <h3><i class="fas fa-clock me-2"></i>Working Hour</h3>
                     <div class="working-hours">
                         <div class="mb-2">
-                            <span class="day">Mon-Fri:</span> 
+                            <span class="day">Mon-Fri:</span> 8.00 am - 10.00 pm
+                        </div>
+                        <div>
+                            <span class="day">Sat:</span> 9.00 am - 6.00 pm
                         </div>
                     </div>
                 </div>
@@ -141,9 +144,17 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="info-box">
-                    <h3><i class="fas fa-coffee me-2"></i>Services</h3>
-                    <div class="services-placeholder">
-                        <!-- Placeholder for future service descriptions -->
+                    <h3><i class="fas fa-shopping-cart me-2"></i>Services</h3>
+                    <div class="services-content">
+                        <p>Koop Mart provides a variety of daily necessities and services to meet the needs of students and college residents. We are committed to providing quality products at affordable prices.</p>
+                        <ul class="services-list">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Daily necessities and groceries</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Stationery and office supplies</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Snacks and beverages</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Personal care products</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Gift hampers and packages</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Student meal plans</li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -19,7 +19,6 @@ urlpatterns = [
     path('perkhidmatan/', views.services, name='services'),
     path('perkhidmatan/cafe-air/', views.cafe_air, name='cafe_air'),
     path('perkhidmatan/koop-mart/', views.koop_mart, name='koop_mart'),
-    path('perkhidmatan/kios-aok-cafe/', views.kiosk_aok, name='kiosk_aok'),
     path('perkhidmatan/dobi/', views.dobi, name='dobi'),
     path('perkhidmatan/parcel/', views.parcel, name='parcel'),
     path('perkhidmatan/bilik-acara/', views.bilik_acara, name='bilik_acara'),
