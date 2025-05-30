@@ -9,6 +9,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/logo.png' %}" sizes="32x32 48x48 64x64">
     {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -53,7 +54,7 @@
                             <li><a class="dropdown-item" href="{% url 'parcel' %}">IM Parcel</a></li>
                             <li><a class="dropdown-item" href="{% url 'cafe_air' %}">Cafe Air</a></li>
                             <li><a class="dropdown-item" href="{% url 'koop_mart' %}">Koop Mart</a></li>
-                            <li><a class="dropdown-item" href="{% url 'kios_aok' %}">Kios "Aok Cafe"</a></li>
+                            <li><a class="dropdown-item" href="{% url 'kiosk_aok' %}">Kios "Aok Cafe"</a></li>
                             <li><a class="dropdown-item" href="{% url 'dobi' %}">Dobi</a></li>
                             <li><a class="dropdown-item" href="{% url 'bilik_acara' %}">Bilik Acara</a></li>
                             <li><a class="dropdown-item" href="{% url 'pakir' %}">Parkir Berbumbung</a></li>
