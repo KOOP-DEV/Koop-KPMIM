@@ -8,24 +8,24 @@
 .parcel-images-container {
     width: 100%;
     max-width: 1700px;
-    height: 700px;
+    height: 460px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 auto;
 }
 
-.parcel-image-top {
-    width: 100%;
-    height: 50%;
+.parcel-image-left {
+    width: 50%;
+    height: 100%;
     object-fit: cover;
 }
 
-.parcel-image-bottom {
-    width: 100%;
-    height: 50%;
+.parcel-image-right {
+    width: 50%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -66,7 +66,7 @@
 
 @media (max-width: 1199.98px) {
     .parcel-images-container {
-        height: 600px;
+        height: 400px;
     }
     
     .info-box {
@@ -77,7 +77,7 @@
 
 @media (max-width: 991.98px) {
     .parcel-images-container {
-        height: 500px;
+        height: 350px;
     }
     
     .info-box h3 {
@@ -92,7 +92,7 @@
 
 @media (max-width: 767.98px) {
     .parcel-images-container {
-        height: 400px;
+        height: 300px;
     }
     
     .info-box {
@@ -108,7 +108,7 @@
 
 @media (max-width: 575.98px) {
     .parcel-images-container {
-        height: 300px;
+        height: 250px;
     }
     
     .info-box {
@@ -131,8 +131,8 @@
         <div class="row justify-content-center mb-4">
             <div class="col-12 text-center">
                 <div class="parcel-images-container">
-                    <img src="{% static 'img/im-parcel1.jpg' %}" alt="IM Parcel Service 1" class="parcel-image-top">
-                    <img src="{% static 'img/im-parcel2.jpg' %}" alt="IM Parcel Service 2" class="parcel-image-bottom">
+                    <img src="{% static 'img/im-parcel1.jpg' %}" alt="IM Parcel Service 1" class="parcel-image-left">
+                    <img src="{% static 'img/im-parcel2.jpg' %}" alt="IM Parcel Service 2" class="parcel-image-right">
                 </div>
             </div>
         </div>
@@ -160,7 +160,15 @@
                 <div class="info-box">
                     <h3><i class="fas fa-box me-2"></i>Services</h3>
                     <div class="services-content">
-                        Provided services are photostat, binding, scan, laminate, internet, printing, computer and surprise gift.
+                        <p>IM Parcel provides comprehensive document and printing services to meet the needs of students and college residents. We are committed to delivering quality services at affordable prices.</p>
+                        <ul class="services-list">
+                            <li>Photostat and printing services</li>
+                            <li>Document binding and lamination</li>
+                            <li>Scanning and digital conversion</li>
+                            <li>Internet access and computer usage</li>
+                            <li>Surprise gift wrapping and packaging</li>
+                            <li>Academic and office document preparation</li>
+                        </ul>
                     </div>
                 </div>
             </div>
