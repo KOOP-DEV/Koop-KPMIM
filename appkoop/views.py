@@ -71,8 +71,3 @@ def edutrip_csr(request):
         'csr_packages': csr_packages
     })
 
-def koop_mart(request):
-    return render(request, 'koop_mart.html')
-
-def kiosk_aok(request):
-    return render(request, 'kiosk_aok.html')

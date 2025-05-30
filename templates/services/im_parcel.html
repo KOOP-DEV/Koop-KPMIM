@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}IM Parcel - Koperasi KPMIM{% endblock %}
+
+{% block extra_css %}
+<style>
+.parcel-images-container {
+    width: 100%;
+    max-width: 1700px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.parcel-image-top {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.parcel-image-bottom {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.info-box {
+    width: 100%;
+    max-width: 1700px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1.5rem auto;
+    border-left: 4px solid var(--primary);
+}
+
+.info-box h3 {
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.working-hours {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark);
+}
+
+.working-hours .day {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.services-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark);
+}
+
+@media (max-width: 1199.98px) {
+    .parcel-images-container {
+        height: 600px;
+    }
+    
+    .info-box {
+        margin: 1rem auto;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .parcel-images-container {
+        height: 500px;
+    }
+    
+    .info-box h3 {
+        font-size: 1.5rem;
+    }
+    
+    .working-hours,
+    .services-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .parcel-images-container {
+        height: 400px;
+    }
+    
+    .info-box {
+        padding: 1.25rem;
+        margin: 0.75rem auto;
+    }
+    
+    .info-box h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .parcel-images-container {
+        height: 300px;
+    }
+    
+    .info-box {
+        padding: 1rem;
+    }
+    
+    .working-hours,
+    .services-content {
+        font-size: 0.95rem;
+    }
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Main Content Section -->
+<section class="py-5">
+    <div class="container">
+        <!-- IM Parcel Images Collage -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 text-center">
+                <div class="parcel-images-container">
+                    <img src="{% static 'img/im-parcel1.jpg' %}" alt="IM Parcel Service 1" class="parcel-image-top">
+                    <img src="{% static 'img/im-parcel2.jpg' %}" alt="IM Parcel Service 2" class="parcel-image-bottom">
+                </div>
+            </div>
+        </div>
+
+        <!-- Working Hours Box -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="info-box">
+                    <h3><i class="fas fa-clock me-2"></i>Working Hour</h3>
+                    <div class="working-hours">
+                        <div class="mb-2">
+                            <span class="day">Mon-Fri:</span> 8.30 am - 5.00 pm
+                        </div>
+                        <div>
+                            <span class="day">Sat:</span> 8.30 am - 2.00 pm
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Box -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="info-box">
+                    <h3><i class="fas fa-box me-2"></i>Services</h3>
+                    <div class="services-content">
+                        Provided services are photostat, binding, scan, laminate, internet, printing, computer and surprise gift.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
