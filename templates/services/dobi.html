@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Koop Mart - Koperasi KPMIM{% endblock %}
+{% block title %}Dobi - Koperasi KPMIM{% endblock %}
 
 {% block extra_css %}
 <style>
-.koop-mart-image {
+.dobi-image {
     width: 100%;
     max-width: 1700px;
     height: 460px;
@@ -50,7 +50,7 @@
 }
 
 @media (max-width: 1199.98px) {
-    .koop-mart-image {
+    .dobi-image {
         height: 400px;
     }
     
@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .koop-mart-image {
+    .dobi-image {
         height: 350px;
     }
     
@@ -75,7 +75,7 @@
 }
 
 @media (max-width: 767.98px) {
-    .koop-mart-image {
+    .dobi-image {
         height: 300px;
     }
     
@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 575.98px) {
-    .koop-mart-image {
+    .dobi-image {
         height: 250px;
     }
     
@@ -107,14 +107,13 @@
 {% endblock %}
 
 {% block content %}
-
 <!-- Main Content Section -->
 <section class="py-5">
     <div class="container">
-        <!-- Koop Mart Image -->
+        <!-- Dobi Image -->
         <div class="row justify-content-center mb-4">
             <div class="col-12 text-center">
-                <img src="{% static 'img/koop-mart.jpg' %}" alt="Koop Mart" class="koop-mart-image">
+                <img src="{% static 'img/dobi.jpg' %}" alt="Dobi Service" class="dobi-image">
             </div>
         </div>
 
@@ -125,10 +124,7 @@
                     <h3><i class="fas fa-clock me-2"></i>Working Hour</h3>
                     <div class="working-hours">
                         <div class="mb-2">
-                            <span class="day">Mon-Fri:</span> 8.00 am - 10.00 pm
-                        </div>
-                        <div>
-                            <span class="day">Sat:</span> 9.00 am - 6.00 pm
+                            Open 24/7
                         </div>
                     </div>
                 </div>
@@ -139,16 +135,15 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="info-box">
-                    <h3><i class="fas fa-shopping-cart me-2"></i>Services</h3>
+                    <h3><i class="fas fa-tshirt me-2"></i>Services</h3>
                     <div class="services-content">
-                        <p>Koop Mart provides a variety of daily necessities and services to meet the needs of students and college residents. We are committed to providing quality products at affordable prices.</p>
+                        <p>Dobi menyediakan perkhidmatan dobi yang mudah dan moden untuk memenuhi keperluan pelajar dan penduduk kolej. Kami komited untuk memberikan perkhidmatan basuhan dan pengeringan yang berkualiti dengan harga yang berpatutan.</p>
                         <ul class="services-list">
-                            <li>Daily necessities and groceries</li>
-                            <li>Stationery and office supplies</li>
-                            <li>Snacks and beverages</li>
-                            <li>Personal care products</li>
-                            <li>Gift hampers and packages</li>
-                            <li>Student meal plans</li>
+                            <li>Sistem pembayaran RFID untuk transaksi yang mudah</li>
+                            <li>Perkhidmatan basuhan untuk sehingga 7kg pakaian setiap mesin</li>
+                            <li>Perkhidmatan pengeringan untuk sehingga 7kg pakaian setiap mesin</li>
+                            <li>Tersedia 24/7 untuk kemudahan maksimum</li>
+                            <li>Mesin dobi yang mesra pengguna dan mudah diakses</li>
                         </ul>
                     </div>
                 </div>
